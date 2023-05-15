@@ -9,19 +9,80 @@
 /* Begin PBXBuildFile section */
 		925D35EA2A06D05200A20506 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D35E92A06D05200A20506 /* AppDelegate.swift */; };
 		925D35EC2A06D05200A20506 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D35EB2A06D05200A20506 /* SceneDelegate.swift */; };
-		925D35EE2A06D05200A20506 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D35ED2A06D05200A20506 /* ViewController.swift */; };
+		925D35EE2A06D05200A20506 /* MeasurementsHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D35ED2A06D05200A20506 /* MeasurementsHistoryViewController.swift */; };
 		925D35F32A06D05200A20506 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 925D35F22A06D05200A20506 /* Assets.xcassets */; };
 		925D35F62A06D05200A20506 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 925D35F42A06D05200A20506 /* LaunchScreen.storyboard */; };
+		925D36002A06D66600A20506 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 925D36022A06D66600A20506 /* Localizable.strings */; };
+		925D36072A06E20300A20506 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D36062A06E20300A20506 /* UIColor+Extensions.swift */; };
+		925D36092A07082C00A20506 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D36082A07082C00A20506 /* HistoryTableViewCell.swift */; };
+		925D360B2A07086500A20506 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D360A2A07086500A20506 /* UIView+Extensions.swift */; };
+		925D360D2A070CE600A20506 /* HistoryTableColumnTitlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D360C2A070CE600A20506 /* HistoryTableColumnTitlesView.swift */; };
+		925D360F2A09786500A20506 /* NewMeasurementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D360E2A09786500A20506 /* NewMeasurementViewController.swift */; };
+		925D36132A098A8100A20506 /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D36122A098A8100A20506 /* DateCell.swift */; };
+		925D36152A098ACA00A20506 /* DatePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D36142A098ACA00A20506 /* DatePickerCell.swift */; };
+		925D36172A098B4E00A20506 /* WeightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D36162A098B4E00A20506 /* WeightCell.swift */; };
+		925D361A2A0AD4A400A20506 /* NewMeasurementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D36192A0AD4A400A20506 /* NewMeasurementViewModel.swift */; };
+		925D361C2A0AD6E500A20506 /* NewMeasurementViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D361B2A0AD6E500A20506 /* NewMeasurementViewModelProtocol.swift */; };
+		925D361E2A0AE2AD00A20506 /* ObservableWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D361D2A0AE2AD00A20506 /* ObservableWrapper.swift */; };
+		925D36202A0AF7B800A20506 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D361F2A0AF7B800A20506 /* Date+Extensions.swift */; };
+		925D36222A0AFB9B00A20506 /* DatePickerCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D36212A0AFB9B00A20506 /* DatePickerCellDelegate.swift */; };
+		925D36262A0B811800A20506 /* NewMeasurementDateCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D36252A0B811800A20506 /* NewMeasurementDateCellViewModel.swift */; };
+		925D36282A0B818E00A20506 /* NewMeasurementDatePickerCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D36272A0B818E00A20506 /* NewMeasurementDatePickerCellViewModel.swift */; };
+		925D362A2A0B81A200A20506 /* NewMeasurementWeightCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D36292A0B81A200A20506 /* NewMeasurementWeightCellViewModel.swift */; };
+		925D362C2A0B832E00A20506 /* NewMeasurementCellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D362B2A0B832E00A20506 /* NewMeasurementCellViewModelProtocol.swift */; };
+		925D362E2A0B8A9500A20506 /* NewMeasurementCellViewModelIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D362D2A0B8A9500A20506 /* NewMeasurementCellViewModelIdentifier.swift */; };
+		925D36302A0B925600A20506 /* WeightCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D362F2A0B925600A20506 /* WeightCellDelegate.swift */; };
+		925D36322A0BB87300A20506 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D36312A0BB87300A20506 /* UIViewController+Extensions.swift */; };
+		925D36352A0BC1DA00A20506 /* MeasurementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D36342A0BC1DA00A20506 /* MeasurementViewModel.swift */; };
+		925D363A2A0BC67700A20506 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 925D36382A0BC67700A20506 /* Model.xcdatamodeld */; };
+		925D363C2A0BC70800A20506 /* MeasurementsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D363B2A0BC70800A20506 /* MeasurementsStore.swift */; };
+		925D363E2A0BC75800A20506 /* MeasurementsStoreDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D363D2A0BC75800A20506 /* MeasurementsStoreDelegate.swift */; };
+		925D36412A0BC8FD00A20506 /* AppDelegateConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D36402A0BC8FD00A20506 /* AppDelegateConst.swift */; };
+		925D36432A0BC9D900A20506 /* MeasurementsStoreProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D36422A0BC9D900A20506 /* MeasurementsStoreProtocol.swift */; };
+		925D36462A0BD6E700A20506 /* MeasurementsHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D36452A0BD6E700A20506 /* MeasurementsHistoryViewModel.swift */; };
+		925D36482A0BD9CD00A20506 /* MeasurementsHistoryViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D36472A0BD9CD00A20506 /* MeasurementsHistoryViewModelProtocol.swift */; };
+		925D364A2A0D56F700A20506 /* Float+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D36492A0D56F700A20506 /* Float+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		925D35E62A06D05200A20506 /* Weight Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weight Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		925D35E92A06D05200A20506 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		925D35EB2A06D05200A20506 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		925D35ED2A06D05200A20506 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		925D35ED2A06D05200A20506 /* MeasurementsHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementsHistoryViewController.swift; sourceTree = "<group>"; };
 		925D35F22A06D05200A20506 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		925D35F52A06D05200A20506 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		925D35F72A06D05200A20506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		925D36012A06D66600A20506 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		925D36032A06D68C00A20506 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		925D36062A06E20300A20506 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		925D36082A07082C00A20506 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		925D360A2A07086500A20506 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		925D360C2A070CE600A20506 /* HistoryTableColumnTitlesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableColumnTitlesView.swift; sourceTree = "<group>"; };
+		925D360E2A09786500A20506 /* NewMeasurementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMeasurementViewController.swift; sourceTree = "<group>"; };
+		925D36122A098A8100A20506 /* DateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
+		925D36142A098ACA00A20506 /* DatePickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerCell.swift; sourceTree = "<group>"; };
+		925D36162A098B4E00A20506 /* WeightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightCell.swift; sourceTree = "<group>"; };
+		925D36192A0AD4A400A20506 /* NewMeasurementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMeasurementViewModel.swift; sourceTree = "<group>"; };
+		925D361B2A0AD6E500A20506 /* NewMeasurementViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMeasurementViewModelProtocol.swift; sourceTree = "<group>"; };
+		925D361D2A0AE2AD00A20506 /* ObservableWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableWrapper.swift; sourceTree = "<group>"; };
+		925D361F2A0AF7B800A20506 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		925D36212A0AFB9B00A20506 /* DatePickerCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerCellDelegate.swift; sourceTree = "<group>"; };
+		925D36252A0B811800A20506 /* NewMeasurementDateCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMeasurementDateCellViewModel.swift; sourceTree = "<group>"; };
+		925D36272A0B818E00A20506 /* NewMeasurementDatePickerCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMeasurementDatePickerCellViewModel.swift; sourceTree = "<group>"; };
+		925D36292A0B81A200A20506 /* NewMeasurementWeightCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMeasurementWeightCellViewModel.swift; sourceTree = "<group>"; };
+		925D362B2A0B832E00A20506 /* NewMeasurementCellViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMeasurementCellViewModelProtocol.swift; sourceTree = "<group>"; };
+		925D362D2A0B8A9500A20506 /* NewMeasurementCellViewModelIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMeasurementCellViewModelIdentifier.swift; sourceTree = "<group>"; };
+		925D362F2A0B925600A20506 /* WeightCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightCellDelegate.swift; sourceTree = "<group>"; };
+		925D36312A0BB87300A20506 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		925D36342A0BC1DA00A20506 /* MeasurementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementViewModel.swift; sourceTree = "<group>"; };
+		925D36392A0BC67700A20506 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		925D363B2A0BC70800A20506 /* MeasurementsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementsStore.swift; sourceTree = "<group>"; };
+		925D363D2A0BC75800A20506 /* MeasurementsStoreDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementsStoreDelegate.swift; sourceTree = "<group>"; };
+		925D36402A0BC8FD00A20506 /* AppDelegateConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateConst.swift; sourceTree = "<group>"; };
+		925D36422A0BC9D900A20506 /* MeasurementsStoreProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementsStoreProtocol.swift; sourceTree = "<group>"; };
+		925D36452A0BD6E700A20506 /* MeasurementsHistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementsHistoryViewModel.swift; sourceTree = "<group>"; };
+		925D36472A0BD9CD00A20506 /* MeasurementsHistoryViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementsHistoryViewModelProtocol.swift; sourceTree = "<group>"; };
+		925D36492A0D56F700A20506 /* Float+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +115,132 @@
 		925D35E82A06D05200A20506 /* Weight Monitor */ = {
 			isa = PBXGroup;
 			children = (
+				925D36332A0BC1A600A20506 /* Model */,
+				925D36042A06D77200A20506 /* View */,
+				925D36182A0AD38100A20506 /* ViewModel */,
+				925D36052A06E1CD00A20506 /* Helpers */,
+				925D35FD2A06D61F00A20506 /* Resources */,
+				925D363F2A0BC8A800A20506 /* Simplifiers */,
+				925D36372A0BC63F00A20506 /* CoreData */,
 				925D35E92A06D05200A20506 /* AppDelegate.swift */,
 				925D35EB2A06D05200A20506 /* SceneDelegate.swift */,
-				925D35ED2A06D05200A20506 /* ViewController.swift */,
-				925D35F22A06D05200A20506 /* Assets.xcassets */,
 				925D35F42A06D05200A20506 /* LaunchScreen.storyboard */,
+				925D35F22A06D05200A20506 /* Assets.xcassets */,
 				925D35F72A06D05200A20506 /* Info.plist */,
 			);
 			path = "Weight Monitor";
+			sourceTree = "<group>";
+		};
+		925D35FD2A06D61F00A20506 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				925D36022A06D66600A20506 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		925D36042A06D77200A20506 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				925D36102A09874500A20506 /* MeasurementsHistory */,
+				925D36112A09875800A20506 /* NewMeasurement */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		925D36052A06E1CD00A20506 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				925D36062A06E20300A20506 /* UIColor+Extensions.swift */,
+				925D360A2A07086500A20506 /* UIView+Extensions.swift */,
+				925D361F2A0AF7B800A20506 /* Date+Extensions.swift */,
+				925D36312A0BB87300A20506 /* UIViewController+Extensions.swift */,
+				925D36492A0D56F700A20506 /* Float+Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		925D36102A09874500A20506 /* MeasurementsHistory */ = {
+			isa = PBXGroup;
+			children = (
+				925D35ED2A06D05200A20506 /* MeasurementsHistoryViewController.swift */,
+				925D360C2A070CE600A20506 /* HistoryTableColumnTitlesView.swift */,
+				925D36082A07082C00A20506 /* HistoryTableViewCell.swift */,
+			);
+			path = MeasurementsHistory;
+			sourceTree = "<group>";
+		};
+		925D36112A09875800A20506 /* NewMeasurement */ = {
+			isa = PBXGroup;
+			children = (
+				925D360E2A09786500A20506 /* NewMeasurementViewController.swift */,
+				925D36122A098A8100A20506 /* DateCell.swift */,
+				925D36142A098ACA00A20506 /* DatePickerCell.swift */,
+				925D36162A098B4E00A20506 /* WeightCell.swift */,
+				925D36212A0AFB9B00A20506 /* DatePickerCellDelegate.swift */,
+				925D362F2A0B925600A20506 /* WeightCellDelegate.swift */,
+			);
+			path = NewMeasurement;
+			sourceTree = "<group>";
+		};
+		925D36182A0AD38100A20506 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				925D36442A0BD6BF00A20506 /* MeasurementsHistory */,
+				925D36362A0BC59D00A20506 /* NewMeasurement */,
+				925D361D2A0AE2AD00A20506 /* ObservableWrapper.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		925D36332A0BC1A600A20506 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				925D363B2A0BC70800A20506 /* MeasurementsStore.swift */,
+				925D36422A0BC9D900A20506 /* MeasurementsStoreProtocol.swift */,
+				925D363D2A0BC75800A20506 /* MeasurementsStoreDelegate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		925D36362A0BC59D00A20506 /* NewMeasurement */ = {
+			isa = PBXGroup;
+			children = (
+				925D36192A0AD4A400A20506 /* NewMeasurementViewModel.swift */,
+				925D361B2A0AD6E500A20506 /* NewMeasurementViewModelProtocol.swift */,
+				925D36252A0B811800A20506 /* NewMeasurementDateCellViewModel.swift */,
+				925D36272A0B818E00A20506 /* NewMeasurementDatePickerCellViewModel.swift */,
+				925D36292A0B81A200A20506 /* NewMeasurementWeightCellViewModel.swift */,
+				925D362B2A0B832E00A20506 /* NewMeasurementCellViewModelProtocol.swift */,
+				925D362D2A0B8A9500A20506 /* NewMeasurementCellViewModelIdentifier.swift */,
+			);
+			path = NewMeasurement;
+			sourceTree = "<group>";
+		};
+		925D36372A0BC63F00A20506 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				925D36382A0BC67700A20506 /* Model.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		925D363F2A0BC8A800A20506 /* Simplifiers */ = {
+			isa = PBXGroup;
+			children = (
+				925D36402A0BC8FD00A20506 /* AppDelegateConst.swift */,
+			);
+			path = Simplifiers;
+			sourceTree = "<group>";
+		};
+		925D36442A0BD6BF00A20506 /* MeasurementsHistory */ = {
+			isa = PBXGroup;
+			children = (
+				925D36452A0BD6E700A20506 /* MeasurementsHistoryViewModel.swift */,
+				925D36472A0BD9CD00A20506 /* MeasurementsHistoryViewModelProtocol.swift */,
+				925D36342A0BC1DA00A20506 /* MeasurementViewModel.swift */,
+			);
+			path = MeasurementsHistory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,6 +285,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 925D35DD2A06D05200A20506;
 			productRefGroup = 925D35E72A06D05200A20506 /* Products */;
@@ -123,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				925D35F62A06D05200A20506 /* LaunchScreen.storyboard in Resources */,
+				925D36002A06D66600A20506 /* Localizable.strings in Resources */,
 				925D35F32A06D05200A20506 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,9 +315,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				925D35EE2A06D05200A20506 /* ViewController.swift in Sources */,
+				925D36322A0BB87300A20506 /* UIViewController+Extensions.swift in Sources */,
+				925D363E2A0BC75800A20506 /* MeasurementsStoreDelegate.swift in Sources */,
+				925D364A2A0D56F700A20506 /* Float+Extensions.swift in Sources */,
+				925D361E2A0AE2AD00A20506 /* ObservableWrapper.swift in Sources */,
+				925D36352A0BC1DA00A20506 /* MeasurementViewModel.swift in Sources */,
+				925D36432A0BC9D900A20506 /* MeasurementsStoreProtocol.swift in Sources */,
+				925D36412A0BC8FD00A20506 /* AppDelegateConst.swift in Sources */,
+				925D360B2A07086500A20506 /* UIView+Extensions.swift in Sources */,
+				925D35EE2A06D05200A20506 /* MeasurementsHistoryViewController.swift in Sources */,
+				925D36262A0B811800A20506 /* NewMeasurementDateCellViewModel.swift in Sources */,
+				925D36462A0BD6E700A20506 /* MeasurementsHistoryViewModel.swift in Sources */,
+				925D36482A0BD9CD00A20506 /* MeasurementsHistoryViewModelProtocol.swift in Sources */,
 				925D35EA2A06D05200A20506 /* AppDelegate.swift in Sources */,
+				925D362E2A0B8A9500A20506 /* NewMeasurementCellViewModelIdentifier.swift in Sources */,
+				925D36302A0B925600A20506 /* WeightCellDelegate.swift in Sources */,
 				925D35EC2A06D05200A20506 /* SceneDelegate.swift in Sources */,
+				925D363C2A0BC70800A20506 /* MeasurementsStore.swift in Sources */,
+				925D362C2A0B832E00A20506 /* NewMeasurementCellViewModelProtocol.swift in Sources */,
+				925D360F2A09786500A20506 /* NewMeasurementViewController.swift in Sources */,
+				925D36072A06E20300A20506 /* UIColor+Extensions.swift in Sources */,
+				925D360D2A070CE600A20506 /* HistoryTableColumnTitlesView.swift in Sources */,
+				925D36202A0AF7B800A20506 /* Date+Extensions.swift in Sources */,
+				925D36282A0B818E00A20506 /* NewMeasurementDatePickerCellViewModel.swift in Sources */,
+				925D361A2A0AD4A400A20506 /* NewMeasurementViewModel.swift in Sources */,
+				925D36092A07082C00A20506 /* HistoryTableViewCell.swift in Sources */,
+				925D362A2A0B81A200A20506 /* NewMeasurementWeightCellViewModel.swift in Sources */,
+				925D36172A098B4E00A20506 /* WeightCell.swift in Sources */,
+				925D361C2A0AD6E500A20506 /* NewMeasurementViewModelProtocol.swift in Sources */,
+				925D36132A098A8100A20506 /* DateCell.swift in Sources */,
+				925D363A2A0BC67700A20506 /* Model.xcdatamodeld in Sources */,
+				925D36222A0AFB9B00A20506 /* DatePickerCellDelegate.swift in Sources */,
+				925D36152A098ACA00A20506 /* DatePickerCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +361,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		925D36022A06D66600A20506 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				925D36012A06D66600A20506 /* en */,
+				925D36032A06D68C00A20506 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -158,6 +377,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -204,7 +424,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -218,6 +438,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -258,7 +479,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,6 +503,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +531,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,6 +567,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		925D36382A0BC67700A20506 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				925D36392A0BC67700A20506 /* Model.xcdatamodel */,
+			);
+			currentVersion = 925D36392A0BC67700A20506 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 925D35DE2A06D05200A20506 /* Project object */;
 }

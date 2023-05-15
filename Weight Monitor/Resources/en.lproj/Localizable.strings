@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  Weight Monitor
+
+  Created by Юрий Демиденко on 06.05.2023.
+  
+*/
+
+weightMonitorTitle = "Weight monitor";
+weightWidgetTitle = "Current weight";
+metricSystem = "Metric system";
+monthlyMeasurements = "Monthly measurements";
+history = "History";
+weightTitle = "Weight";
+changesTitle = "Changes";
+dateTitle = "Date";
+newMeasurementTitle = "Add weight";
+dateTitle = "Date";
+kilos = " kg";
+pounds = " lb";
+addButtonTitle = "Add";
+enterWeightPlaceholder = "Enter your weight here...";
+addMeasurementMessage = "Added a new measurement";
+deleteMeasurementMessage = "Measurement removed";
+editMeasurementMessage = "Measurement edited";
+switchMeasurementSystemMessage = "Measurement system has been changed";
