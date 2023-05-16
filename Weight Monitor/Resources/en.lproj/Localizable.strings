@@ -24,3 +24,5 @@ addMeasurementMessage = "Added a new measurement";
 deleteMeasurementMessage = "Measurement removed";
 editMeasurementMessage = "Measurement edited";
 switchMeasurementSystemMessage = "Measurement system has been changed";
+today = "Today";
+yesterday = "Yesterday";

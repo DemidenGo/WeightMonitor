@@ -93,7 +93,9 @@ extension NewMeasurementViewModel: NewMeasurementViewModelProtocol {
     }
 
     var dateStringForCurrentDate: String {
-        currentDate.isCurrentYear ? currentDate.shortDateString : currentDate.longDateString
+        if currentDate.isToday { return NSLocalizedString("today", comment: "Text representation of the date") }
+        if currentDate.isYesterday { return NSLocalizedString("yesterday", comment: "Text representation of the date") }
+        return currentDate.isCurrentYear ? currentDate.shortDateString : currentDate.longDateString
     }
 
     var numberOfRows: Int {

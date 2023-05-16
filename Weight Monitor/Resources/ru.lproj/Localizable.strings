@@ -24,3 +24,5 @@ addMeasurementMessage = "Добавлено новое измерение";
 deleteMeasurementMessage = "Измерение удалено";
 editMeasurementMessage = "Измерение отредактировано";
 switchMeasurementSystemMessage = "Cистема измерения веса изменена";
+today = "Сегодня";
+yesterday = "Вчера";

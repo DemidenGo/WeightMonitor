@@ -26,6 +26,8 @@ extension Date {
     var longDateString: String { longDateFormatter.string(from: self) }
     var startOfDay: Date { Calendar.current.startOfDay(for: self) }
 
+    var isToday: Bool { Calendar.current.isDateInToday(self) }
+    var isYesterday: Bool { Calendar.current.isDateInYesterday(self) }
     var isCurrentYear: Bool {
         let calendar = Calendar(identifier: .gregorian)
         return calendar.component(.year, from: Date()) == calendar.component(.year, from: self)
