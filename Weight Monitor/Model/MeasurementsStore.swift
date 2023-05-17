@@ -44,7 +44,7 @@ final class MeasurementsStore: NSObject {
     }
 
     private func save(coreDataEntity: MeasurementCoreData, with measurement: MeasurementViewModel) throws {
-        let weight = Float(measurement.weight) ?? 0
+        let weight = measurement.weight.floatFromString
         let roundedWeight = round(weight * 10) / 10
         coreDataEntity.weight = roundedWeight
         coreDataEntity.date = measurement.date

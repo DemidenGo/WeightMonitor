@@ -41,7 +41,7 @@ final class MeasurementsHistoryViewModel {
         calculateChanges(in: measurementsStore.measurements)
         measurements = measurementsStore.measurements.enumerated().map {
             MeasurementViewModel(date: $1.date ?? Date(),
-                                 weight: $1.weight.cleanFractionalPart + weightMeasureString,
+                                 weight: $1.weight.stringFromFloat + weightMeasureString,
                                  weightChange: measurementsChanges[$0])
         }
     }
@@ -54,8 +54,8 @@ final class MeasurementsHistoryViewModel {
             $0.weight - $1.weight
         }
         measurementsChanges = measurementsChangesFloat.map {
-            if $0 > 0 { return "+" + String($0.cleanFractionalPart) + weightMeasureString }
-            return String($0.cleanFractionalPart + weightMeasureString)
+            if $0 > 0 { return "+" + String($0.stringFromFloat) + weightMeasureString }
+            return String($0.stringFromFloat + weightMeasureString)
         }
     }
 }

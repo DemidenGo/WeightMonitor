@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		922ED10C2A14C36E008CE829 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922ED10B2A14C36E008CE829 /* String+Extensions.swift */; };
 		925D35EA2A06D05200A20506 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D35E92A06D05200A20506 /* AppDelegate.swift */; };
 		925D35EC2A06D05200A20506 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D35EB2A06D05200A20506 /* SceneDelegate.swift */; };
 		925D35EE2A06D05200A20506 /* MeasurementsHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925D35ED2A06D05200A20506 /* MeasurementsHistoryViewController.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		922ED10B2A14C36E008CE829 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		925D35E62A06D05200A20506 /* Weight Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weight Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		925D35E92A06D05200A20506 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		925D35EB2A06D05200A20506 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -153,9 +155,10 @@
 			children = (
 				925D36062A06E20300A20506 /* UIColor+Extensions.swift */,
 				925D360A2A07086500A20506 /* UIView+Extensions.swift */,
-				925D361F2A0AF7B800A20506 /* Date+Extensions.swift */,
 				925D36312A0BB87300A20506 /* UIViewController+Extensions.swift */,
+				925D361F2A0AF7B800A20506 /* Date+Extensions.swift */,
 				925D36492A0D56F700A20506 /* Float+Extensions.swift */,
+				922ED10B2A14C36E008CE829 /* String+Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				925D36322A0BB87300A20506 /* UIViewController+Extensions.swift in Sources */,
+				922ED10C2A14C36E008CE829 /* String+Extensions.swift in Sources */,
 				925D363E2A0BC75800A20506 /* MeasurementsStoreDelegate.swift in Sources */,
 				925D364A2A0D56F700A20506 /* Float+Extensions.swift in Sources */,
 				925D361E2A0AE2AD00A20506 /* ObservableWrapper.swift in Sources */,

@@ -8,7 +8,14 @@
 import Foundation
 
 extension Float {
-    var cleanFractionalPart: String {
-       return self.truncatingRemainder(dividingBy: 1) == 0 ? String(format: "%.0f", self) : String(format: "%.1f", self)
+
+    var stringFromFloat: String {
+        if self.truncatingRemainder(dividingBy: 1) == 0 {
+            decimalNumberFormatter.maximumFractionDigits = 0
+            return decimalNumberFormatter.string(from: NSNumber(value: self)) ?? ""
+        } else {
+            decimalNumberFormatter.maximumFractionDigits = 1
+            return decimalNumberFormatter.string(from: NSNumber(value: self)) ?? ""
+        }
     }
 }

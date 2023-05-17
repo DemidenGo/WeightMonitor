@@ -24,7 +24,7 @@ struct MeasurementViewModel: Equatable {
 
         return MeasurementViewModel(
             date: self.date,
-            weight: ((Float(self.weight.dropLast(3)) ?? 0) * convertRatio).cleanFractionalPart + measurementUnitString,
-            weightChange: ((Float(self.weightChange.dropLast(3)) ?? 0) * convertRatio).cleanFractionalPart + measurementUnitString)
+            weight: (String(self.weight.dropLast(3)).floatFromString * convertRatio).stringFromFloat + measurementUnitString,
+            weightChange: (String(self.weightChange.dropLast(3)).floatFromString * convertRatio).stringFromFloat + measurementUnitString)
     }
 }
